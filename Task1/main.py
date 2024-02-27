@@ -18,7 +18,21 @@ def first2():
         if int(i) < min:
             min = int(i)
     return min
-    
+def first3():
+    num = int(input("Введите число: "))
+    s = 0
+    p = 1
+    for i in str(num):
+        s += int(i)
+        p *= int(i)
+    count = 0
+    for i in range(1, num+1):
+        if num % i == 0:
+            if math.gcd(s, i) == 1:
+                if math.gcd(p, i) != 1:
+                    count += i
+    return s, p, count
+
     ##############
     # MAIN BLOCK #
     ##############
