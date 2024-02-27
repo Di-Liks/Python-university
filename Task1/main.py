@@ -11,7 +11,14 @@ def first1():
             if i % 3 != 0:
                 count += 1
     return num, count
-  
+def first2():
+    num = int(input("Введите число: "))
+    min = 9
+    for i in str(num):
+        if int(i) < min:
+            min = int(i)
+    return min
+    
     ##############
     # MAIN BLOCK #
     ##############
