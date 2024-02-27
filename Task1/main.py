@@ -32,6 +32,8 @@ def first3():
                 if math.gcd(p, i) != 1:
                     count += i
     return s, p, count
+def two(string):
+    return "".join(random.sample(string, len(string)))
 
     ##############
     # MAIN BLOCK #
