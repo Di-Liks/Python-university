@@ -34,6 +34,11 @@ def first3():
     return s, p, count
 def two(string):
     return "".join(random.sample(string, len(string)))
+def three(s):
+    s = s.lower().replace(' ', '')
+    if s == s[::-1]:
+        return True
+    return False
 
     ##############
     # MAIN BLOCK #
