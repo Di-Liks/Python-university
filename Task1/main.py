@@ -39,6 +39,9 @@ def three(s):
     if s == s[::-1]:
         return True
     return False
+def four(s):
+    s.sort(key=len)
+    return s
 
     ##############
     # MAIN BLOCK #
