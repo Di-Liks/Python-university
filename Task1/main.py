@@ -42,6 +42,10 @@ def three(s):
 def four(s):
     s.sort(key=len)
     return s
+def five(text):
+    pattern = r'\b\d{1,2}\s(?:января|февраля|марта|апреля|мая|июня|июля|августа|сентября|октября|ноября|декабря)\s\d{4}\b'
+    dates = re.findall(pattern, text)
+    return dates
 
     ##############
     # MAIN BLOCK #
